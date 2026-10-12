@@ -1,0 +1,942 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#fdf8f3">
+<meta name="description" content="Kritika and Harvinder invite you to celebrate their wedding, 23–25 November 2026.">
+<title>Kritika Weds Harvinder | November 2026</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --cream: #f9f3f0;
+  --canvas: #f5efed;
+  --ink: #2f2623;
+  --rose: #b98d82;
+  --rose-soft: #d8b4a6;
+  --blush: #f0d7ce;
+  --sage: #dfe6df;
+  --muted: #685d59;
+  --line: #eadcd1;
+  --night: #2d2623;
+  --sand: #f2e8e2;
+}
+
+* { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 20px;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(180deg, #f8f2ee 0%, #fbf7f3 100%);
+  color: var(--ink);
+  font-family: Inter, Arial, sans-serif;
+  font-weight: 300;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  border-radius: 18px;
+}
+
+a { color: inherit; }
+
+.script {
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+}
+
+.serif {
+  font-family: "Cormorant Garamond", Georgia, serif;
+}
+
+/* HERO */
+
+.hero {
+  position: relative;
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+  background: #43342f;
+}
+
+.hero-photo,
+.hero-shade {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-photo {
+  object-fit: cover;
+  object-position: center 55%;
+  animation: heroReveal 1.1s ease both;
+  filter: saturate(0.9) contrast(1.04);
+}
+
+.hero-shade {
+  background: linear-gradient(
+    180deg,
+    rgba(26,20,17,.18) 0%,
+    rgba(26,20,17,.26) 38%,
+    rgba(26,20,17,.74) 100%
+  );
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  width: min(900px, 100%);
+  padding: 80px 22px 66px;
+}
+
+.hero-kicker {
+  font-size: 10px;
+  letter-spacing: .34em;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  font-size: clamp(72px, 13vw, 142px);
+  line-height: .85;
+  margin: 36px 0 18px;
+  text-shadow: 0 2px 25px #0002;
+}
+
+.hero h1 .amp {
+  font-size: .52em;
+  display: block;
+  line-height: 1.15;
+  color: #f1cdbb;
+}
+
+.hero-date {
+  font-size: clamp(19px, 3vw, 27px);
+  letter-spacing: .08em;
+  margin: 30px 0 9px;
+}
+
+.hero-place {
+  font-size: 10px;
+  letter-spacing: .23em;
+  text-transform: uppercase;
+  line-height: 1.8;
+  opacity: .88;
+}
+
+.hero-divider {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  justify-content: center;
+  margin: 24px 0;
+  color: #f1cdbb;
+}
+
+.hero-divider::before,
+.hero-divider::after {
+  content: "";
+  height: 1px;
+  width: 48px;
+  background: #ffffff80;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: clamp(18px, 4vw, 44px);
+  margin: 28px 0 30px;
+}
+
+.time-unit { min-width: 45px; }
+
+.time-unit strong {
+  display: block;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(27px, 5vw, 39px);
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.time-unit span {
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: .17em;
+  opacity: .76;
+}
+
+.outline-link,
+.dark-link,
+.rose-link {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 9px;
+  letter-spacing: .22em;
+  padding: 15px 23px;
+  transition: background .2s, color .2s;
+}
+
+.outline-link {
+  border: 1px solid #ffffffa6;
+  color: white;
+}
+
+.outline-link:hover {
+  background: white;
+  color: var(--ink);
+}
+
+.scroll-hint {
+  position: absolute;
+  bottom: 36px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 9px;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  opacity: .75;
+}
+
+/* GENERAL SECTIONS */
+
+.section { padding: 90px 22px; }
+
+#gallery {
+  padding-top: 12px;
+  padding-bottom: 48px;
+}
+
+#invitation {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+#events {
+  padding-top: 48px;
+}
+
+.wrap {
+  width: min(1080px, 100%);
+  margin: 0 auto;
+}
+
+.section-head {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.script-label {
+  font-size: 42px;
+  line-height: 1;
+  color: var(--rose);
+  margin: 0;
+}
+
+.section-title {
+  font-size: clamp(34px, 5vw, 48px);
+  font-weight: 400;
+  line-height: 1.05;
+  margin: 8px 0 0;
+}
+
+.flourish {
+  color: var(--rose);
+  margin: 22px auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+}
+
+.flourish::before,
+.flourish::after {
+  content: "";
+  height: 1px;
+  width: 42px;
+  background: var(--line);
+}
+
+/* OUR STORY */
+
+.story-copy {
+  max-width: 700px;
+  text-align: center;
+  margin: 0 auto;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 2;
+}
+
+.quote-section {
+  background: #faf5f2;
+  border-radius: 30px;
+  padding: 24px 30px 26px;
+  margin-top: 26px;
+  border: 1px solid rgba(185, 141, 130, 0.2);
+}
+
+.quote-layout {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 28px;
+  align-items: center;
+}
+
+.quote-image {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 28px;
+  box-shadow: 0 18px 40px rgba(79, 59, 46, 0.12);
+}
+
+.quote-copy {
+  padding: 8px 0;
+}
+
+.quote-copy .script {
+  margin: 0 0 18px;
+  font-size: clamp(42px, 6vw, 64px);
+  line-height: 0.95;
+  color: var(--rose);
+}
+
+.quote-copy h3 {
+  margin: 0 0 16px;
+  font-size: clamp(28px, 4vw, 42px);
+  line-height: 1.1;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.quote-copy p:not(.script) {
+  margin: 0;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  color: var(--muted);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: 1.2fr .8fr;
+  gap: 22px;
+  margin-top: 48px;
+  align-items: center;
+}
+
+.story-photo {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 28px;
+  box-shadow: 0 18px 40px rgba(79, 59, 46, 0.10);
+}
+
+.story-photo:first-child {
+  object-position: center 40%;
+}
+
+.story-photo:last-child { height: 420px; }
+
+.caption {
+  font-size: 10px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 15px;
+}
+
+/* EVENTS */
+
+.events-section { background: white; }
+
+.events {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 17px;
+  align-items: stretch;
+}
+
+.event-card {
+  text-align: center;
+  padding: 35px 20px 32px;
+  background: var(--cream);
+  border: 1px solid var(--line);
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.event-card.featured {
+  background: white;
+  border: 1px solid var(--rose);
+  box-shadow: 0 14px 35px #5a38200c;
+  transform: translateY(-8px);
+}
+
+.event-symbol {
+  font-size: 25px;
+  color: var(--rose);
+  margin-bottom: 14px;
+}
+
+.event-card h3 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.event-date {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 19px;
+  color: var(--rose);
+  margin: 9px 0 5px;
+}
+
+.event-day {
+  font-size: 10px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.event-note {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+  color: var(--muted);
+  margin: 12px 0 0;
+}
+
+/* PHOTO GALLERY */
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1.35fr .85fr .85fr;
+  grid-template-rows: 240px 240px;
+  gap: 12px;
+}
+
+.gallery-grid figure {
+  margin: 0;
+  overflow: hidden;
+  background: #e9d8c8;
+  border-radius: 22px;
+  box-shadow: 0 12px 28px rgba(71, 54, 47, 0.08);
+}
+
+.gallery-grid figure:first-child {
+  grid-row: span 2;
+}
+
+.gallery-grid figure:last-child {
+  grid-column: 2 / 4;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .6s ease;
+  border-radius: 22px;
+}
+
+.gallery-grid figure:hover img {
+  transform: scale(1.04);
+}
+
+.sunflower-figure {
+  overflow: hidden;
+  background: #f5e4d7;
+}
+
+.sunflower-figure img {
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+  transform: scale(0.78);
+}
+
+/* VENUE */
+
+.venue-section {
+  background: var(--night);
+  color: var(--cream);
+  text-align: center;
+  padding: 85px 22px;
+}
+
+.venue-section .flourish::before,
+.venue-section .flourish::after {
+  background: #ffffff36;
+}
+
+.venue-section .section-title {
+  font-size: clamp(38px, 6vw, 56px);
+}
+
+.venue-description {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 21px;
+  color: #d9c9bf;
+  margin: 18px 0 28px;
+}
+
+.venue-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.dark-link {
+  border: 1px solid var(--rose);
+  color: #e7b8a7;
+}
+
+.dark-link:hover {
+  background: var(--rose);
+  color: white;
+}
+
+.rose-link {
+  background: var(--rose);
+  border: 1px solid var(--rose);
+  color: white;
+}
+
+.rose-link:hover { background: #aa7568; }
+
+.share-note {
+  font-size: 12px;
+  color: #c9b8ae;
+  margin-top: 14px;
+}
+
+/* FOOTER */
+
+.footer {
+  background: #211b18;
+  color: #c7b6ab;
+  text-align: center;
+  padding: 28px 20px;
+}
+
+.footer .script {
+  font-size: 37px;
+  color: #f0c7b5;
+}
+
+.footer p {
+  font-size: 9px;
+  letter-spacing: .25em;
+  text-transform: uppercase;
+  margin: 10px 0 0;
+}
+
+@keyframes heroReveal {
+  from { transform: scale(1.035); opacity: .6; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+  .hero { min-height: 92svh; }
+
+  .hero-photo { object-position: 55% 70%; }
+
+  .hero-content { padding-top: 65px; }
+
+  .hero h1 {
+    font-size: clamp(70px, 17vw, 108px);
+    margin-top: 34px;
+  }
+
+  .section { padding: 68px 20px; }
+
+  #invitation {
+    padding-top: 38px;
+    padding-bottom: 32px;
+  }
+
+  #gallery { padding-bottom: 32px; }
+
+  #events { padding-top: 38px; }
+
+  .date-card {
+    padding: 24px 18px 26px;
+  }
+
+  .quote-layout {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .quote-image {
+    height: 360px;
+  }
+
+  .story-grid {
+    gap: 10px;
+    margin-top: 32px;
+  }
+
+  .story-photo { height: 330px; }
+
+  .story-photo:last-child {
+    height: 275px;
+    margin-top: 30px;
+  }
+
+  .events { grid-template-columns: 1fr; gap: 12px; }
+
+  .event-card,
+  .event-card.featured {
+    min-height: 0;
+    padding: 28px 20px;
+    transform: none;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 150px 150px;
+    gap: 8px;
+  }
+
+  .gallery-grid figure:first-child { grid-row: span 2; }
+
+  .gallery-grid figure:last-child { grid-column: auto; }
+
+  .gallery-grid figure:nth-child(4) { grid-column: 1 / 3; }
+
+  .sunflower-figure {
+    min-height: 150px;
+  }
+
+  .quote-section {
+    padding: 16px 18px 18px;
+    margin-top: 18px;
+  }
+
+  .date-card h2 {
+    font-size: clamp(24px, 8vw, 38px);
+  }
+
+  .hero-kicker,
+  .hero-place,
+  .time-unit span,
+  .outline-link,
+  .eyebrow {
+    letter-spacing: .12em;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header class="hero">
+  <img
+    class="hero-photo"
+    src="assets/dance2.webp"
+    alt="Kritika and Harvinder dancing together"
+    fetchpriority="high"
+  >
+
+  <div class="hero-shade"></div>
+
+  <div class="hero-content">
+
+
+    <h1 class="script">
+      Kritika <span class="amp">&amp;</span> Harvinder
+    </h1>
+
+    <div class="hero-divider">✦</div>
+
+    <p class="hero-date serif">24 November 2026</p>
+
+    <p class="hero-place">
+      The Elevate Resort · Wedding Celebration
+    </p>
+
+    <div class="countdown" id="countdown" aria-label="Countdown to the wedding">
+      <div class="time-unit"><strong>--</strong><span>Days</span></div>
+      <div class="time-unit"><strong>--</strong><span>Hours</span></div>
+      <div class="time-unit"><strong>--</strong><span>Minutes</span></div>
+      <div class="time-unit"><strong>--</strong><span>Seconds</span></div>
+    </div>
+  </div>
+
+  <div class="scroll-hint">Scroll to celebrate</div>
+</header>
+
+<main>
+
+  <!-- WEDDING EVENTS -->
+  <section class="section events-section" id="events">
+    <div class="wrap">
+
+      <div class="section-head">
+        <h2 class="serif section-title">Days to Remember</h2>
+        <div class="flourish">✦</div>
+      </div>
+
+      <div class="events">
+
+        <article class="event-card">
+          <div class="event-symbol">✿</div>
+          <h3>Haldi</h3>
+          <p class="event-date">23 November 2026</p>
+          <p class="event-day">Monday</p>
+          <p class="event-note">
+            A golden day filled with warmth, laughter and blessings.
+          </p>
+        </article>
+
+        <article class="event-card featured">
+          <div class="event-symbol">♡</div>
+          <h3>Wedding Ceremony</h3>
+          <p class="event-date">24 November 2026</p>
+          <p class="event-day">Tuesday</p>
+          <p class="event-note">
+            The day two stories become one.
+          </p>
+        </article>
+
+        <article class="event-card">
+          <div class="event-symbol">❀</div>
+          <h3>Milan &amp; Vidai</h3>
+          <p class="event-date">25 November 2026</p>
+          <p class="event-day">Wednesday</p>
+          <p class="event-note">
+            A heartfelt gathering, farewells and new beginnings.
+          </p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+<!-- OUR STORY -->
+<section class="section" id="invitation">
+  <div class="wrap">
+
+    <div class="section-head">
+      <p class="script script-label">With love</p>
+      <h2 class="serif section-title">A New Chapter Begins</h2>
+      <div class="flourish">✦</div>
+    </div>
+
+    <div class="quote-section" style="margin-top: 42px;">
+      <div class="quote-layout">
+        <img
+          class="quote-image"
+          src="assets/bench.webp"
+          alt="Kritika and Harvinder together"
+          loading="lazy"
+        >
+
+        <div class="quote-copy">
+          <p class="script">From friends to forever</p>
+          <h3 class="serif">
+            And just like that, forever found its way to them.
+          </h3>
+          <p>
+          It started with a little friendship, grew with a thousand smiles, and turned into a love they can't wait to call forever. 💕 Kritika and Harvinder are beginning their sweetest adventure yet, and nothing would make it more special than having you there to share the joy, laughter, and love.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+  
+
+  <!-- PHOTO GALLERY -->
+  <section class="section" id="gallery">
+    <div class="wrap">
+
+      <div class="section-head">
+        <p class="script script-label">Little moments</p>
+        <h2 class="serif section-title">A Gallery of Us</h2>
+        <div class="flourish">✦</div>
+      </div>
+
+      <div class="gallery-grid">
+        <figure>
+          <img
+            src="assets/stair.webp"
+            alt="Kritika and Harvinder at the stair"
+            loading="lazy"
+          >
+        </figure>
+
+        <figure>
+          <img
+            src="assets/shoulder.webp"
+            alt="Kritika and Harvinder at the stair"
+            loading="lazy"
+          >
+        </figure>
+
+        <figure>
+          <img
+            src="assets/couple-seated.webp"
+            alt="Kritika and Harvinder seated together"
+            loading="lazy"
+          >
+        </figure>
+
+        <figure>
+          <img
+            src="assets/grass.webp"
+            alt="Kritika and Harvinder sitting on a bench"
+            loading="lazy"
+          >
+        </figure>
+
+       
+      </div>
+
+    </div>
+  </section>
+
+  <!-- VENUE -->
+  <section class="venue-section" id="venue">
+    <div class="wrap">
+
+      <div class="section-head">
+        <p class="script script-label">Meet us here</p>
+        <h2 class="serif section-title">The Venue</h2>
+        <div class="flourish">✦</div>
+      </div>
+
+      <p class="venue-description">Elevate Resort</p>
+      <p class="venue-description" style="font-size: 18px; line-height: 1.7; margin-top: 10px; max-width: 760px; margin-left: auto; margin-right: auto;">
+        Deoria Bypass Rd, near Little Flower Polytechnic, Khorabar, Gorakhpur, Uttar Pradesh 273010
+      </p>
+
+      <div class="venue-actions">
+        <a
+          class="dark-link"
+          href="https://www.google.com/maps/search/?api=1&query=Elevate+Resort+Deoria+Bypass+Rd+near+Little+Flower+Polytechnic+Khorabar+Gorakhpur+Uttar+Pradesh+273010"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Open in Google Maps ↗
+        </a>
+
+        <a
+          class="rose-link"
+          id="shareWhatsApp"
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Share the invitation ↗
+        </a>
+      </div>
+
+      <p class="share-note">
+        It would mean the world to have you celebrate with us.
+      </p>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="script">Kritika 💞 Harvinder</div>
+</footer>
+
+<script>
+(function () {
+  // Wedding countdown: 24 November 2026, 7 PM IST.
+  const target = new Date("2026-11-24T19:00:00+05:30").getTime();
+  const box = document.getElementById("countdown");
+
+  function update() {
+    const diff = target - Date.now();
+
+    if (diff <= 0) {
+      box.innerHTML =
+        '<p class="serif" style="font-size:24px">Today, our forever begins ♡</p>';
+      return;
+    }
+
+    const units = [
+      ["Days", Math.floor(diff / 86400000)],
+      ["Hours", Math.floor((diff % 86400000) / 3600000)],
+      ["Minutes", Math.floor((diff % 3600000) / 60000)],
+      ["Seconds", Math.floor((diff % 60000) / 1000)]
+    ];
+
+    box.innerHTML = units.map(([label, value]) =>
+      '<div class="time-unit"><strong>' +
+      String(value).padStart(2, "0") +
+      '</strong><span>' + label + '</span></div>'
+    ).join("");
+  }
+
+  update();
+  setInterval(update, 1000);
+
+  const venue = "https://www.google.com/maps/search/?api=1&query=Elevate+Resort+Deoria+Bypass+Rd+near+Little+Flower+Polytechnic+Khorabar+Gorakhpur+Uttar+Pradesh+273010";
+
+  const message =
+    "Kritika & Harvinder invite you to celebrate their wedding. \u{1F48D}\n\n" +
+    "\u{1F4C5} Wedding day: 24 November 2026\n" +
+    "Celebrations: 23–25 November 2026\n" +
+    "\u{1F4CD} Venue: Elevate Resort, Gorakhpur\n\n" +
+    "A little friendship, a lifetime of love, and a beginning made sweeter with you. \u{2764}\u{FE0F}\n\n" +
+    "Invitation: " + window.location.href +
+    "\nVenue: " + venue;
+
+  const whatsappUrl = new URL("https://api.whatsapp.com/send");
+  whatsappUrl.searchParams.set("text", message);
+
+  document.getElementById("shareWhatsApp").href = whatsappUrl.toString();
+})();
+</script>
+
+</body>
+</html>
