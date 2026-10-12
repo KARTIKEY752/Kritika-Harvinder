@@ -943,13 +943,15 @@ a { color: inherit; }
   const venue = "https://maps.app.goo.gl/WKddMfvVSh9CATUr7";
 
   const message =
+    "Invitation: " + window.location.href + "\n\n" +
     "Kritika & Harvinder invite you to celebrate their wedding. \u{1F48D}\n\n" +
     "\u{1F4C5} Wedding day: 24 November 2026\n" +
     "Celebrations: 23–25 November 2026\n" +
     "\u{1F4CD} Venue: Elevate Resort\n" +
-    venue + "\n\n" +
+    
     "A little friendship, a lifetime of love, and a beginning made sweeter with you. \u{2764}\u{FE0F}\n\n" +
-    "Invitation: " + window.location.href;
+    "Venue link: " + venue;
+    
 
   const whatsappUrl = new URL("https://api.whatsapp.com/send");
   whatsappUrl.searchParams.set("text", message);
