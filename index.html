@@ -102,6 +102,7 @@ a { color: inherit; }
   z-index: 1;
   width: min(900px, 100%);
   padding: 80px 22px 66px;
+  transform: translateY(-30px);
 }
 
 .hero-kicker {
@@ -506,6 +507,13 @@ a { color: inherit; }
   margin: 18px 0 28px;
 }
 
+.venue-name-link {
+  display: inline-block;
+  text-decoration: underline;
+  text-decoration-color: var(--rose);
+  text-underline-offset: 0.18em;
+}
+
 .venue-actions {
   display: flex;
   gap: 12px;
@@ -570,7 +578,10 @@ a { color: inherit; }
 
   .hero-photo { object-position: 55% 70%; }
 
-  .hero-content { padding-top: 65px; }
+  .hero-content {
+    padding-top: 65px;
+    transform: translateY(-20px);
+  }
 
   .hero h1 {
     font-size: clamp(70px, 17vw, 108px);
@@ -849,7 +860,14 @@ a { color: inherit; }
         <div class="flourish">✦</div>
       </div>
 
-      <p class="venue-description">Elevate Resort</p>
+      <a
+        class="venue-description venue-name-link"
+        href="https://maps.app.goo.gl/WKddMfvVSh9CATUr7"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Elevate Resort
+      </a>
       <p class="venue-description" style="font-size: 18px; line-height: 1.7; margin-top: 10px; max-width: 760px; margin-left: auto; margin-right: auto;">
         Deoria Bypass Rd, near Little Flower Polytechnic, Khorabar, Gorakhpur, Uttar Pradesh 273010
       </p>
@@ -857,7 +875,7 @@ a { color: inherit; }
       <div class="venue-actions">
         <a
           class="dark-link"
-          href="https://www.google.com/maps/search/?api=1&query=Elevate+Resort+Deoria+Bypass+Rd+near+Little+Flower+Polytechnic+Khorabar+Gorakhpur+Uttar+Pradesh+273010"
+          href="https://maps.app.goo.gl/WKddMfvVSh9CATUr7"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -920,16 +938,16 @@ a { color: inherit; }
   update();
   setInterval(update, 1000);
 
-  const venue = "https://www.google.com/maps/search/?api=1&query=Elevate+Resort+Deoria+Bypass+Rd+near+Little+Flower+Polytechnic+Khorabar+Gorakhpur+Uttar+Pradesh+273010";
+  const venue = "https://maps.app.goo.gl/WKddMfvVSh9CATUr7";
 
   const message =
     "Kritika & Harvinder invite you to celebrate their wedding. \u{1F48D}\n\n" +
     "\u{1F4C5} Wedding day: 24 November 2026\n" +
     "Celebrations: 23–25 November 2026\n" +
-    "\u{1F4CD} Venue: Elevate Resort, Gorakhpur\n\n" +
+    "\u{1F4CD} Venue: Elevate Resort\n" +
+    venue + "\n\n" +
     "A little friendship, a lifetime of love, and a beginning made sweeter with you. \u{2764}\u{FE0F}\n\n" +
-    "Invitation: " + window.location.href +
-    "\nVenue: " + venue;
+    "Invitation: " + window.location.href;
 
   const whatsappUrl = new URL("https://api.whatsapp.com/send");
   whatsappUrl.searchParams.set("text", message);
